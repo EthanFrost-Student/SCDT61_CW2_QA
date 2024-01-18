@@ -38,7 +38,6 @@
                     </td>
                     <td><?= htmlspecialchars($equip['name']) ?></td> 
                     <td><?= htmlspecialchars($equip['description']) ?></td> 
-
                     <td>
                         <form method="post">
                             <input type="hidden" name="deleteId" value="<?= $equip['id'] ?>">
