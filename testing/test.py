@@ -12,4 +12,4 @@ driver.get("http://localhost/A2(New)/index.php")
 
 print(driver.title)
 
-time.sleep(10)
+time.sleep(20)
