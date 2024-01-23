@@ -36,6 +36,16 @@ element.click()
 element.clear()
 element.click()
 element.send_keys("Testing Testing 123!?")
+time.sleep(2)
+#This finds the second text area on the screen and clicks it
+element = driver.find_element(By.XPATH, "")
+#This does the same as the previous text area
+element.click()
+element.clear()
+element.click()
+time.sleep(2)
+#inputs new text after clearing the area
+element.send_keys("")
 
 
 #Using the XPATH it finds the equipment button in the header and clicks it
