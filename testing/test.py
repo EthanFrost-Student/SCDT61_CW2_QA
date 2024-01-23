@@ -25,15 +25,17 @@ element = driver.find_element(By.XPATH, "/html/body/nav/div/ul/li[2]/a")
 element.click()
 #sleep is used again to allow visualisation
 time.sleep(3)
-
+#This clicks the edit button on the first row on the equipment page
 element = driver.find_element(By.XPATH, "/html/body/div/table/tbody[2]/tr[1]/td[4]/button")
+element.click()
+#This is used to visually see each button clicked
+time.sleep(2)
+#This finds the edit button on the second row of the equipment page and clicks it
+element = driver.find_element(By.XPATH, "/html/body/div/table/tbody[2]/tr[2]/td[4]/button")
 element.click()
 
 
-#This is finding another button on the equipment page and clicking it
-##element = driver.find_element(By.XPATH, "/html/body/div/a")
-##element.click()
-##time.sleep(3)
+
 
 #This finds the Login button on the index page and clicks it
 ##element = driver.find_element(By.XPATH, "/html/body/nav/div/ul/li[3]/a")
