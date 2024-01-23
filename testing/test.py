@@ -29,6 +29,10 @@ element.click()
 time.sleep(1)
 #This inputs text into the input bar that was previously clicked on
 element.send_keys("Testing the test!")
+#Clicks the text area on the screen below the input form
+element = driver.find_element(By.XPATH, "/html/body/div/form/div[2]/textarea")
+element.click()
+
 
 
 
