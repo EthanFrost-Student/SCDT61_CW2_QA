@@ -32,8 +32,10 @@ element.send_keys("Testing the test!")
 #Clicks the text area on the screen below the input form
 element = driver.find_element(By.XPATH, "/html/body/div/form/div[2]/textarea")
 element.click()
-
-
+#This is used due to the text in the text area not disappearing when clicked on
+element.clear()
+element.click()
+element.send_keys("Testing Testing 123!?")
 
 
 #Using the XPATH it finds the equipment button in the header and clicks it
