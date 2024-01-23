@@ -38,14 +38,18 @@ element.click()
 element.send_keys("Testing Testing 123!?")
 time.sleep(2)
 #This finds the second text area on the screen and clicks it
-element = driver.find_element(By.XPATH, "")
+element = driver.find_element(By.XPATH, "/html/body/div/form/div[3]/textarea")
 #This does the same as the previous text area
 element.click()
 element.clear()
 element.click()
 time.sleep(2)
 #inputs new text after clearing the area
-element.send_keys("")
+element.send_keys("Earth to Test site, Earth to Test site")
+#Next the submit button is located at the bottom of the screen
+element = driver.find_element(By.XPATH, "/html/body/div/form/button")
+element.click()
+
 
 
 #Using the XPATH it finds the equipment button in the header and clicks it
