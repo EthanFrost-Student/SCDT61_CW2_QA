@@ -13,18 +13,13 @@ options.add_experimental_option("detach", True)
 driver = webdriver.Chrome()
 
 driver.get("http://localhost/A2(New)/index.php")
-##driver.get("http://localhost/A2(New)/add_equipment.php")
 
 #prints the title of the website GourmetGrocer
 print(driver.title)
 
-#Using the XPath method it finds the specified element then waits so I can visually identify it works then clicks the element
-##element = driver.find_element(By.XPATH, "/html/body/nav/a")
-##time.sleep(8)
-##element.click()
-
 #This is here due to the fact that Selenium runs too quick and clicks the targetted area before the button loads in, giving an error, this allows the button to load first
 time.sleep(3)
+
 
 #This finds the Login button on the index page and clicks it
 element = driver.find_element(By.XPATH, "/html/body/nav/div/ul/li[3]/a")
@@ -33,19 +28,6 @@ element.click()
 time.sleep(3)
 
 
-#Finds the Not got an account? button on the login page
-element = driver.find_element(By.XPATH, "/html/body/form/section/div/div/div/div/div/a")
-element.click()
-time.sleep(3)
-element = driver.find_element(By.XPATH, "/html/body/nav/a")
-element.click()
-
-
-
-
-#Next it finds the GourmetGrocer button again and clicks it
-##element = driver.find_element(By.XPATH, "/html/body/nav/a")
-##element.click()
 
 #Using the XPATH it finds the equipment button in the header and clicks it
 ##element = driver.find_element(By.XPATH, "/html/body/nav/div/ul/li[2]/a")
@@ -56,6 +38,33 @@ element.click()
 ##element = driver.find_element(By.XPATH, "/html/body/div/a")
 ##element.click()
 ##time.sleep(3)
+
+
+#Using the XPath method it finds the specified element then waits so I can visually identify it works then clicks the element
+##element = driver.find_element(By.XPATH, "/html/body/nav/a")
+##time.sleep(8)
+##element.click()
+
+
+
+
+
+
+#Finds the Not got an account? button on the login page
+##element = driver.find_element(By.XPATH, "/html/body/form/section/div/div/div/div/div/a")
+##element.click()
+##time.sleep(3)
+##element = driver.find_element(By.XPATH, "/html/body/nav/a")
+##element.click()
+
+
+
+#Next it finds the GourmetGrocer button again and clicks it
+##element = driver.find_element(By.XPATH, "/html/body/nav/a")
+##element.click()
+
+
+
 
 
 
