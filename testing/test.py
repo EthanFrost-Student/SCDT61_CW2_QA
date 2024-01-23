@@ -46,6 +46,8 @@ element.click()
 time.sleep(2)
 #inputs new text after clearing the area
 element.send_keys("Earth to Test site, Earth to Test site")
+#This is used as the submit button is clicked too fast
+time.sleep(3)
 #Next the submit button is located at the bottom of the screen
 element = driver.find_element(By.XPATH, "/html/body/div/form/button")
 element.click()
