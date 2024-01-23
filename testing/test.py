@@ -20,39 +20,33 @@ print(driver.title)
 #This is here due to the fact that Selenium runs too quick and clicks the targetted area before the button loads in, giving an error, this allows the button to load first
 time.sleep(3)
 
-#Using the XPATH it finds the equipment button in the header and clicks it
-element = driver.find_element(By.XPATH, "/html/body/nav/div/ul/li[2]/a")
-element.click()
-#sleep is used again to allow visualisation
-time.sleep(3)
-#This clicks the edit button on the first row on the equipment page
-element = driver.find_element(By.XPATH, "/html/body/div/table/tbody[2]/tr[1]/td[4]/button")
-element.click()
-#This is used to visually see each button clicked
-time.sleep(2)
-#This finds the edit button on the second row of the equipment page and clicks it
-element = driver.find_element(By.XPATH, "/html/body/div/table/tbody[2]/tr[2]/td[4]/button")
-element.click()
-
-
-
-
 #This finds the Login button on the index page and clicks it
-##element = driver.find_element(By.XPATH, "/html/body/nav/div/ul/li[3]/a")
-##element.click()
+element = driver.find_element(By.XPATH, "/html/body/nav/div/ul/li[3]/a")
+element.click()
 #Sleep is used again for visualisation
-##time.sleep(3)
+time.sleep(3)
 #Finds the Not got an account? button on the login page
-##element = driver.find_element(By.XPATH, "/html/body/form/section/div/div/div/div/div/a")
+element = driver.find_element(By.XPATH, "/html/body/form/section/div/div/div/div/div/a")
+element.click()
+time.sleep(4)
+element = driver.find_element(By.XPATH, "/html/body/form/section/div/div/div/div/div/a")
+element.click()
+
+
+
+#Using the XPATH it finds the equipment button in the header and clicks it
+##element = driver.find_element(By.XPATH, "/html/body/nav/div/ul/li[2]/a")
 ##element.click()
+#sleep is used again to allow visualisation
 ##time.sleep(3)
-##element = driver.find_element(By.XPATH, "/html/body/nav/a")
+#This clicks the edit button on the first row on the equipment page
+##element = driver.find_element(By.XPATH, "/html/body/div/table/tbody[2]/tr[1]/td[4]/button")
 ##element.click()
-
-
-
-
-
+#This is used to visually see each button clicked
+##time.sleep(2)
+#This finds the edit button on the second row of the equipment page and clicks it
+##element = driver.find_element(By.XPATH, "/html/body/div/table/tbody[2]/tr[2]/td[4]/button")
+##element.click()
 
 
 
