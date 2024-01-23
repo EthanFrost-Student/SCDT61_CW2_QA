@@ -21,23 +21,27 @@ print(driver.title)
 time.sleep(3)
 
 
-#This finds the Login button on the index page and clicks it
-element = driver.find_element(By.XPATH, "/html/body/nav/div/ul/li[3]/a")
+#Using the XPATH it finds the equipment button in the header and clicks it
+element = driver.find_element(By.XPATH, "/html/body/nav/div/ul/li[2]/a")
 element.click()
-#Sleep is used again for visualisation
+#sleep is used again to allow visualisation
+time.sleep(3)
+#This is finding another button on the equipment page and clicking it
+element = driver.find_element(By.XPATH, "/html/body/div/a")
+element.click()
 time.sleep(3)
 
 
 
-#Using the XPATH it finds the equipment button in the header and clicks it
-##element = driver.find_element(By.XPATH, "/html/body/nav/div/ul/li[2]/a")
+#This finds the Login button on the index page and clicks it
+##element = driver.find_element(By.XPATH, "/html/body/nav/div/ul/li[3]/a")
 ##element.click()
-#sleep is used again to allow visualisation
+#Sleep is used again for visualisation
 ##time.sleep(3)
-#This is finding another button on the equipment page and clicking it
-##element = driver.find_element(By.XPATH, "/html/body/div/a")
-##element.click()
-##time.sleep(3)
+
+
+
+
 
 
 #Using the XPath method it finds the specified element then waits so I can visually identify it works then clicks the element
